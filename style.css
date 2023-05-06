@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+}
+header{
+    background-color: aliceblue;
+    width:100%;
+    position:fixed;
+    z-index:999;
+    display: flex;
+    justify-content:space-between;
+    align-items: center ;
+    padding:10px 200px ;
+}
+.logo{
+    text-decoration:none ;
+    color:rgb(62, 62, 109);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6em;
+}
+.navigation a{
+    text-decoration:none ;
+    color:rgb(62, 62, 109);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color:rgb(62, 62, 109);
+}
+section {
+    padding: 100px 200px;
+    min-height: 100vh;
+}
+section1{
+    padding: 100px 200px;
+    min-height: 100vh;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://media.istockphoto.com/id/1323860984/vector/green-background-in-vector-illustration-with-glow-and-lights.jpg?s=612x612&w=0&k=20&c=8IJexeaZOCxSRrNiCCgUvB-dexsy8w9PEF1IF8v4skU=');
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;   
+}
+.main  span {
+    display :inline-block;
+    margin-top: 10px ;
+    color :aqua;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px ;
+    margin-bottom: 30px;
+}
+.main-bottom{
+    color: white;
+    background-color:rgb(62, 62, 109);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em ;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    transition: 0.7s ease; 
+} 
+.main-bottom:hover{
+    background-color:rgb(62, 62, 109);
+    transform: scale(1.1);
+}
+.social-icons a {
+    color:rgb(255, 255, 255);
+    text-decoration:none ;
+    font-size:1.9em ;
+    margin-right:25px; 
+    }
+    .social-icons {
+        margin-left: 25px;
+        
+    }
+    .titre{
+        display: flex;
+        justify-content: center;  
+        color: rgb(62, 62, 109);
+        font-size: 2.4em;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+   
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .card{
+        background-color: white;
+        width: 21.25em;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 15% );
+        border-radius: 10px;
+        padding: 25px;
+        margin:15px;
+        transition: 0.7s ease;
+    }
+    .card:hover {
+        background-color: rgb(209, 209, 213);
+        transform:scale(1.1) ;
+    }
+    .icon{
+        color: rgb(62, 62, 109);
+        font-size: 8em;
+        text-align: center;
+    }
+    .info{
+        text-align: center;
+
+    }
+
+.info h3 {
+color: rgb(62, 62, 109);
+font-size: 1.2em;
+font-weight: 700;
+margin : 10px;
+}
+ .card1{
+        background-color: white;
+        width: 30em;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 15% );
+        border-radius: 10px;
+        padding: 35px;
+        margin: 35px;
+        margin-bottom: 46px;
+        transition: 0.7s ease;
+        min-height: 60vh;
+       
+       
+    }
+    .card1:hover {
+        background-color: rgb(209, 209, 213);
+        transform:scale(1.1) ;
+    }
+
+.img1{
+    background-image: url("https://media.licdn.com/dms/image/C4E0BAQGD4w9ABXemng/company-logo_200_200/0/1549437079532?e=1691020800&v=beta&t=yOi4dKZaDEgBiuARp5FQbiacKT50ak5ZzI4_dc68SQs") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 170px;
+   margin-left: 34%;
+    
+}
+
+
+.img2{
+    background-image: url("https://media.istockphoto.com/id/1323860984/vector/green-background-in-vector-illustration-with-glow-and-lights.jpg?s=612x612&w=0&k=20&c=8IJexeaZOCxSRrNiCCgUvB-dexsy8w9PEF1IF8v4skU=");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 300px;
+    margin-left: 26%;
+   
+}
+.parag{
+    font-size: 1.1em;
+}
+.card1soft{
+    background-color: white;
+    width: 100.25em;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15% );
+    border-radius: 10px;
+    padding: 35px;
+    margin: 35px;
+    margin-bottom: 30px;
+    transition: 0.7s ease;
+    min-height: 60vh;
+display: flex;
+    justify-content: center ;
+   
+   
+}
+
+.lin {
+    border-left: 2px solid rgb(152, 157, 152);
+    height: 383px;
+    position: absolute;
+    /* margin-left: -3px; */
+    margin: 7px;
+}
+
+
+
+  
+.subcard{
+    background-color: rgb(255, 255, 255);
+    width: 21.25em;
+
+    padding: 25px;
+    margin:50px;
+    
+}
+
+
+.title
+    {
+        display: flex;
+        justify-content: center;  
+        color:rgb(62, 62, 109);
+        font-size: 2.4em;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+.list{
+padding-left: 40px;
+list-style:none;
+padding: 0px;
+}
+.zoz{
+    display :flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap ;
+}
+.listicons{
+    padding-left: 40px;
+    list-style:none;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    margin-top: 3px;
+    }
+
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap ;
+        align-items: center ;
+        justify-content: space-around;
+        }
+        #msg{
+            color: #61b752;
+            margin-top: -80px;
+            display: block;
+        }
+        input { margin-top: 70px;
+            border: none;
+            margin-right: 40px;
+            -webkit-appearance: none;
+            -ms-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: #f2f2f2;
+            padding: 12px;
+            border-radius: 3px;
+            width: 250px;
+            outline: none;
+           }
+            :focus ::placeholder {
+             color: transparent;
+    
+           }
+          input::placeholder {
+            
+            transition: color 0.3s ease;
+           }
+           textarea{
+            margin-top: 30px;
+            border: none;
+            -webkit-appearance: none;
+            -ms-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: #f2f2f2;
+            padding: 12px;
+            border-radius: 3px;
+            width: 250px;
+            outline: none;
+            width: 45em;
+            margin-right:50px ;
+           }
+        :focus::placeholder {
+            color: transparent;
+          }
+          textarea::placeholder {
+           
+            transition: color 0.3s ease;
+           }
+          .btn{
+            color: white;
+            background-color: rgb(62, 62, 109);
+            text-decoration: none;
+            display: inline-block;
+            padding: 0.9375em 2.1875em ;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            transition: 0.7s ease; 
+            position: relative;
+            border: navajowhite;
+            
+        } 
+
+
+    .titrecon{
+        display: flex;
+        justify-content: center;  
+        color:rgb(62, 62, 109);
+        font-size: 2.4em;
+        font-weight: 800;
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+
+.details{
+    margin-top: 50px;
+}
+
+.nbr{ box-sizing: border-box; 
+ display: flex;
+ justify-content: end;
+ margin-top: 10px;
+}
+b{  color: rgb(62, 62, 109);
+    margin-right: 10px;
+}
+.card12{
+    background-color: white;
+    width: 50em;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15% );
+    border-radius: 10px;
+    padding: 35px;
+    margin: 35px;
+    margin-bottom: 46px;
+    transition: 0.7s ease;
+    min-height: 60vh;
+   
+   
+}
+.card12:hover {
+    background-color: rgb(209, 209, 213);
+    transform:scale(1.1) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
