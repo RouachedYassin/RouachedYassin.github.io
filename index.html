@@ -238,24 +238,16 @@
 
      </section>
 
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwWzANpUjeJpuTULVXT87M8S2LT24NA67jWskJpKDfOkgehutfJAJ4gMxie6CTJsCU7Lw/exec'
+  const form = document.forms['submit-to-google-sheet']
 
-     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRmhIrkSnOHJLJbLWd6jPUQRetGbL6UnrKaIhRGW2qIw-F48iH_ThbanWQeoK1Pok9/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        form.addEventListener('submit', e => { 
-            e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData (form)})
-       .then(response => {
-         msg.innerHTML = "Message sent successfully"
-         setTimeout(function () {
-             msg.innerHTML =""
-         },5000)
-         form.reset()
-        }) 
-        .catch(error => console.error('Error!', error.message))
-    })
-        </script>
-        
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
