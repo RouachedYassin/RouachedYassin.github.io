@@ -216,11 +216,10 @@
             
            
         
-            <form name="submit-to-google-sheet" method="POST" 
-  action="https://script.google.com/macros/s/AKfycbwl4HkXCztao3iJJxr2cY86VW-AIT-kWcQoLhrwdTFjPMsGRPX1n5xNn2qbw27eGGNpFw/exec">
-                <input type= "text" name= "Name" placeholder= "Your Name" required>
-                <input type= "email" name= "Email" placeholder= "Your Email" required>
-                <textarea name= "Message" rows="6" placeholder= "Your Message"></textarea>
+            <form   action="" name="contact-us">
+                <input type= "text" name= "Name" id="Name" placeholder= "Your Name" required>
+                <input type= "email" name= "Email" id="Email" placeholder= "Your Email" required>
+                <textarea name= "Message" id="Message" rows="6" placeholder= "Your Message"></textarea>
                
                 <button type= "submit" class= "btn btn2" >Submit</button>
            </form>
@@ -240,19 +239,13 @@
      </section>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwl4HkXCztao3iJJxr2cY86VW-AIT-kWcQoLhrwdTFjPMsGRPX1n5xNn2qbw27eGGNpFw/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg= document.getElementById("msg")
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxp_O-1hRpntsfXtfKbzv13NmzvJ9Z0JbeO8xsOlpZ-g8XfcHMsouJ-NYSgXC8X2H-wpg/exec'
+  const form = document.forms['contact-us']
+
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-                   msg.innerHTML= "Message sent successfully" 
-        setTimeout( function(){
-            msg.innerHTML=""
-        },5000)
-        form.reset()
-    })
+      .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
 </script>
