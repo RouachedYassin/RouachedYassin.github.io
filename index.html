@@ -216,7 +216,7 @@
             
            
         
-            <form   action="" name="contact-us">
+            <form   action="" name="submit-to-google-sheet">
                 <input type= "text" name= "Name" id="Name" placeholder= "Your Name" required>
                 <input type= "email" name= "Email" id="Email" placeholder= "Your Email" required>
                 <textarea name= "Message" id="Message" rows="6" placeholder= "Your Message"></textarea>
@@ -239,8 +239,8 @@
      </section>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxp_O-1hRpntsfXtfKbzv13NmzvJ9Z0JbeO8xsOlpZ-g8XfcHMsouJ-NYSgXC8X2H-wpg/exec'
-  const form = document.forms['contact-us']
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwhXtaII-cnHjw1UwXjTuog07D_6U2JdfIB0zylZ1EIH4L72O_E6IwurjiJ33f66jP_/exec'
+  const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
     e.preventDefault()
