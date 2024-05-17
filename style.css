@@ -183,6 +183,15 @@ margin : 10px;
     margin-left: 64px;
    
 }
+    .img3{
+    background-image: url("https://github.com/RouachedYassin/RouachedYassin.github.io/blob/main/img3.jpg?raw=true");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px;
+    width: 300px;
+    margin-left: 64px;
+   
+}
 .parag{
     font-size: 1.1em;
 }
